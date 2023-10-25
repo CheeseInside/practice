@@ -61,20 +61,23 @@ int pop(void)
     {
         return -1;
     }*/
-    if (is_empty());
-
     int value;
-    for (size_t i = 0; i < SIZE; i++)
+
+    if (is_empty());
+    else
     {
-        if (stack[i])
+        for (size_t i = 0; i < SIZE; i++)
         {
-            value = stack[i];
-            stack[i] = NULL;
-            cnt++;
-            break;
+            if (stack[i])
+            {
+                value = stack[i];
+                stack[i] = NULL;
+                cnt++;
+                break;
+            }
         }
+        return value;
     }
-    return value;
 }
 
 
