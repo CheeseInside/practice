@@ -15,7 +15,7 @@ void show(void)
 
 bool is_empty(void)
 {
-    if(stack[SIZE-1] == NULL)
+    if(!stack[SIZE-1])
     {
         printf ("Stack is empty\n");
         return -1;
