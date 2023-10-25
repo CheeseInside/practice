@@ -1,4 +1,5 @@
 #include "stack.h"
+#include <stdbool.h>
 #include <stdio.h>
 #define SIZE 5
 
@@ -12,12 +13,40 @@ void show(void)
     }
 }
 
-int push(int n)
+bool is_empty(void)
 {
-    if(stack[0] != NULL)
+    if(stack[SIZE-1] == NULL)
     {
+        printf ("Stack is empty\n");
         return -1;
     }
+    else
+    {
+        return 0;
+    }
+}
+
+bool is_full(void)
+{
+    if(stack[0])
+    {
+        printf ("Stack is full\n");
+        return -1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int push(int n)
+{
+    /*if(stack[0] != NULL) //stack is full
+    {
+        return -1;
+    }*/
+    if (is_full());
+
     else
     {
         stack[cnt] = n;
@@ -28,14 +57,16 @@ int push(int n)
 
 int pop(void)
 {
-    if(stack[SIZE-1] == NULL) //stack is empty
+    /*if(stack[SIZE-1] == NULL) //stack is empty
     {
         return -1;
-    }
+    }*/
+    if (is_empty());
+
     int value;
     for (size_t i = 0; i < SIZE; i++)
     {
-        if (stack[i] != NULL)
+        if (stack[i])
         {
             value = stack[i];
             stack[i] = NULL;
@@ -46,16 +77,5 @@ int pop(void)
     return value;
 }
 
-/*bool is_full(void)
-{
 
-}
 
-bool is_empty(void)
-{
-    if(stack[SIZE-1])
-    {
-        printf ("\nStack is empty\n");
-    }
-}
-*/

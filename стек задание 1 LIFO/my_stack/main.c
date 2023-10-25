@@ -1,15 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdbool.h>
 #include "stack.h"
 
 int main()
 {
-    //is empty();
+    int d = pop();
+
     push(1);
     push(2);
     push(3);
     push(4);
     push(5);
+
     push(6); //stack overflow
     show();
 
@@ -35,6 +38,10 @@ int main()
 
     push(5);
     printf ("\n");
+    show();
+
+    printf ("\n");
+    push(6);
     show();
 
     return 0;

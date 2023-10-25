@@ -10,3 +10,17 @@
 	"stack.h"
 	<stdio.h>
 
+1698264450 source:c:\users\ƒмитрий\desktop\стек задание 1 lifo\my_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stack.h"
+
+1698264911 c:\users\ƒмитрий\desktop\стек задание 1 lifo\my_stack\stack.h
+	<stdbool.h>
+
+1698265710 source:c:\users\ƒмитрий\desktop\стек задание 1 lifo\my_stack\stack.c
+	"stack.h"
+	<stdbool.h>
+	<stdio.h>
+
