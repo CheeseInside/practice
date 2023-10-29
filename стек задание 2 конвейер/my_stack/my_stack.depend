@@ -1,0 +1,54 @@
+# depslib dependency file v1.0
+1698173619 source:c:\users\Дмитрий\desktop\my_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1698173622 c:\users\Дмитрий\desktop\my_stack\stack.h
+
+1698172948 source:c:\users\Дмитрий\desktop\my_stack\stack.c
+	"stack.h"
+	<stdio.h>
+
+1698264450 source:c:\users\Дмитрий\desktop\стек задание 1 lifo\my_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stack.h"
+
+1698264911 c:\users\Дмитрий\desktop\стек задание 1 lifo\my_stack\stack.h
+	<stdbool.h>
+
+1698265710 source:c:\users\Дмитрий\desktop\стек задание 1 lifo\my_stack\stack.c
+	"stack.h"
+	<stdbool.h>
+	<stdio.h>
+
+1698267692 source:c:\users\Дмитрий\desktop\стек задание 2 fifo\my_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stack.h"
+
+1698264911 c:\users\Дмитрий\desktop\стек задание 2 fifo\my_stack\stack.h
+	<stdbool.h>
+
+1698267591 source:c:\users\Дмитрий\desktop\стек задание 2 fifo\my_stack\stack.c
+	"stack.h"
+	<stdbool.h>
+	<stdio.h>
+
+1698347545 source:c:\users\Дмитрий\desktop\СВА\стек задание 2 fifo remake\my_stack\main.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+	"stack.h"
+
+1698264911 c:\users\Дмитрий\desktop\СВА\стек задание 2 fifo remake\my_stack\stack.h
+	<stdbool.h>
+
+1698591421 source:c:\users\Дмитрий\desktop\СВА\стек задание 2 fifo remake\my_stack\stack.c
+	"stack.h"
+	<stdbool.h>
+	<stdio.h>
+
