@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1698792802 source:c:\users\Дмитрий\desktop\СВА\work_with_kucha\main.c
+	<stdio.h>
+	<stdlib.h>
+	"stack.h"
+
+1698792698 source:c:\users\Дмитрий\desktop\СВА\work_with_kucha\stack.c
+	<stdio.h>
+	<stdlib.h>
+	<stdbool.h>
+
+1698792748 c:\users\Дмитрий\desktop\СВА\work_with_kucha\stack.h
+	<stdbool.h>
+
