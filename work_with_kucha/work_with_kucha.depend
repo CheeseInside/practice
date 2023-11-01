@@ -1,14 +1,14 @@
 # depslib dependency file v1.0
-1698792802 source:c:\users\Äìèòðèé\desktop\ÑÂÀ\work_with_kucha\main.c
+1698856408 source:c:\users\Äìèòðèé\desktop\ÑÂÀ\work_with_kucha\main.c
 	<stdio.h>
 	<stdlib.h>
 	"stack.h"
 
-1698792698 source:c:\users\Äìèòðèé\desktop\ÑÂÀ\work_with_kucha\stack.c
+1698857056 source:c:\users\Äìèòðèé\desktop\ÑÂÀ\work_with_kucha\stack.c
 	<stdio.h>
 	<stdlib.h>
 	<stdbool.h>
 
-1698792748 c:\users\Äìèòðèé\desktop\ÑÂÀ\work_with_kucha\stack.h
+1698856243 c:\users\Äìèòðèé\desktop\ÑÂÀ\work_with_kucha\stack.h
 	<stdbool.h>
 

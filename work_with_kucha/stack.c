@@ -21,27 +21,34 @@ bool is_empty(void)
 
 void show(void)
 {
-    if(is_empty())
+    //if(is_empty())
+    if(!stack.value)
     {
-
         printf("Stack is empty");
     }
     else
     {
         for (size_t i = 0; i < counter; i++)
         {
-            printf ("%d ", p_stack->value);
+            printf ("%d ", stack.next->value);
         }
     }
 }
 
 int push (int n)
 {
-    stack.value = 1;
-    printf ("%d ", stack.value);
     stack.next = malloc (sizeof stack.next);
+    stack.next->value = n;
+    printf ("%d ", stack.next->value);
     counter++;
     return 0;
+}
+
+int pop(void)
+{
+    printf ("\n%d ", stack.next->value);
+    free(stack.next);
+    counter--;
 }
 
 
