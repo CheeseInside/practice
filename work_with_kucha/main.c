@@ -5,22 +5,37 @@
 int main()
 {
     show();
-    printf("\n");
     push(1);
+    show();
     push(2);
+    show();
     push(3);
+    show();
     push(4);
-    push(5);
-    push(6);
-    int a = pop();
-    a = pop();
-    a = pop();
-    a = pop();
-    a = pop();
-    a = pop();
-    a = pop();
-    a = pop();
+    show();
 
+    int a = pop();
+    show();
+    a = pop();
+    show();
+    a = pop();
+    show();
+    printf ("\n\n");
+
+    a = pop();
+    show();
+
+    push(11);
+    show();
+    push(12);
+    show();
+    push(13);
+    show();
+    printf ("\n\n");
+    a = pop();
+    show();
+    a = pop();
+    show();
 
     return 0;
 }

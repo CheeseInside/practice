@@ -1,54 +1,74 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include "stack.h"
 
 struct stack_item_t
 {
     int value;
     struct stack_item_t *next;
-} *p_stack = NULL;
+};
 
-struct stack_item_t stack;
-
-//*p_stack = &stack;
-
-int counter = 0;
-
-bool is_empty(void)
-{
-    return(!p_stack);
-}
+struct stack_item_t *stack = NULL;
 
 void show(void)
 {
-    //if(is_empty())
-    if(!stack.value)
+    if(is_empty())
     {
-        printf("Stack is empty");
+        printf("stack is empty\n");
     }
     else
     {
-        for (size_t i = 0; i < counter; i++)
+        struct stack_item_t *stack_copy = stack;
+        while(stack_copy)
         {
-            printf ("%d ", stack.next->value);
+            printf("%d\t", stack_copy->value);
+            stack_copy = stack_copy -> next;
         }
+        printf("\n");
     }
 }
 
-int push (int n)
+bool is_empty(void)
 {
-    stack.next = malloc (sizeof stack.next);
-    stack.next->value = n;
-    printf ("%d ", stack.next->value);
-    counter++;
+    return(!stack);
+}
+
+
+
+int push(int n)
+{
+    struct stack_item_t *new_stack_item=malloc(sizeof(struct stack_item_t));
+    new_stack_item->value=n;
+    new_stack_item->next=NULL;
+    if(is_empty())
+    {
+        stack=new_stack_item;
+    }
+    else
+    {
+        struct stack_item_t *stack_copy = stack;
+
+        while(stack_copy->next)
+        {
+            stack_copy = stack_copy->next;
+        }
+        stack_copy->next = new_stack_item;
+
+    }
     return 0;
 }
 
+
 int pop(void)
 {
-    printf ("\n%d ", stack.next->value);
-    free(stack.next);
-    counter--;
+    if(is_empty())
+    {
+        return -1;
+    }
+    struct stack_item_t *top = stack;
+    int value = top->value;
+    stack = top->next;
+    free(top);
+    return value;
 }
-
-
